@@ -4,9 +4,9 @@ import wollok.game.*
 object pepita {
 	var property energia = 100
 	var property ciudad = buenosAires 
-
 	var property position = game.at(3,3)
 	var property amiga = "Vieja amiga"
+	
 	method image() = if (energia > 100) "pepita-gorda-raw.png" else "pepita.png"
 
 	method come(comida) {
@@ -17,8 +17,7 @@ object pepita {
 		if (self.position() != unaCiudad.position()) {
 			self.move(unaCiudad.position())
 			ciudad = unaCiudad
-		}
-		else {
+		} else {
 			game.say(self, "Ya estoy en " + unaCiudad + "!")
 			ciudad = unaCiudad
 		}
