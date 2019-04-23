@@ -50,17 +50,30 @@ object pepita {
 		amiga = ave
 		} 
 	}
+	
+	method chocasteCon(entrenador){
+		entrenador.alimentar(self)
+	}
 }
 
 object pepona{
 	method nombre () = "pepona"
 	method image () = "pepona.png"
 	method position () = game.at(2,7)
+	method chocasteCon(entrenador){
+		//game.say(self, "No tengo hambre!")
+		//No hace nada, quiero que diga lo de arriba!!!
+	}
 }
+
 
 object pipa{
 	method nombre () = "pipa"
 	method image () = "pepitaCanchera.png"
 	method position () = game.at(6,6)
+	method chocasteCon(entrenador){
+		//game.say(self, "No tengo hambre!")
+		//No hace nada, quiero que diga lo de arriba!!!
+	}
 }
 

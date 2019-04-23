@@ -25,8 +25,10 @@ program PepitaGame {
 //	COLISIONES
 //	game.whenCollideDo (pipa, {golondrina => golondrina.nuevaAmiga(pipa)})
 //	game.whenCollideDo (pepona, {golondrina => golondrina.nuevaAmiga(pepona)})
-	game.whenCollideDo (manzana, {entrenador => entrenador.agarrarComida(manzana)})
-	game.whenCollideDo (alpiste, {entrenador => entrenador.agarrarComida(alpiste)})
+//	game.whenCollideDo(manzana, { entrenador => manzana.chocasteCon(entrenador)})
+//	game.whenCollideDo(alpiste, { entrenador => alpiste.chocasteCon(entrenador)})
+//	game.whenCollideDo(pepita, { entrenador => pepita.chocasteCon(entrenador)})
+	game.whenCollideDo(roque, { cosa => cosa.chocasteCon(roque)})
 	//algo.chocasteCon(roque)
 	
 //	TECLADO
